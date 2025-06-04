@@ -1,6 +1,6 @@
 <footer>
   <div class="idk">
-    <p>Főrész</p>
+    <p id="foresz">Főrész</p>
     <p>Blog</p>
   </div>
   <div class="elerhetoseg">
