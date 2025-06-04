@@ -7,11 +7,13 @@
   <?php
   if ( have_posts() ) :
     while ( have_posts() ) :
-      echo '<div class="bejegyzes">';
       the_post();
-      the_title( '<h1>', '</h1>' );
+      echo '<div class="bejegyzes">';
+      echo '<h1><a href="' . esc_url( get_permalink() ) . '">';
+      the_title();
+      echo '</a></h1>';
       the_content();
-      echo'</div>';
+      echo '</div>';
     endwhile;
   else :
     echo '<p>No content found</p>';
