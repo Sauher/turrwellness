@@ -6,10 +6,12 @@
 <main id="main">
   <?php
   if ( have_posts() ) :
-    while ( have_posts() ) : the_post();
+    while ( have_posts() ) :
+      echo '<div class="bejegyzes">';
+      the_post();
       the_title( '<h1>', '</h1>' );
       the_content();
-      wp_get_attachment_image( $attachment_id, $size, $icon );
+      echo'</div>';
     endwhile;
   else :
     echo '<p>No content found</p>';

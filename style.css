@@ -2,31 +2,66 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: #f5f5f5;
+  background-image: url(welnesshatter.png);
+  background-repeat: no-repeat;
+  background-position: 90% -10%;
+  background-color: rgba(255, 255, 255, 0.7);
+  background-blend-mode:lighten ;
   color: #333;
 }
 h1{
   width: 40%;
 }
-a{
-  color: aqua !important;
+.attachment-post-thumbnail{
+  width: 80%;
+  height: 300px;
+  display: flex;
+}
+h1 a{
+  color: #0571d3 !important;
   text-decoration: none;
+}
+h1 a:hover{
+  text-decoration: underline;
+}
+a{
+  color: black !important;
+  text-decoration: none;
+  transition: 1s;
+}
+.bejegyzes{
+  width: 50%;
+}
+a:hover{
+  text-decoration: underline;
+  
 }
 ul{
   list-style-type: none;
 }
 header, footer {
-  background: #333;
-  color: #fff;
+  background-color: white;
   padding: 1em;
   text-align: center;
   display: flex;
   flex-direction: row;
 }
+p{
+  width: 33%;
+  display: flex;
+}
 
 main {
   padding: 1em;
+  display: flex;
+  flex-direction: row;
 }
+.elerhetoseg{
+  width: 30%;
+  justify-content: center ;
+}
+main h1{width: 33%;
+display: flex;}
 nav{
   display: flex;
   margin-top: 1.1em;
